@@ -4,19 +4,34 @@
  */
 
 export type RootStackParamList = {
+  Home: undefined;
   Root: undefined;
   NotFound: undefined;
+  Signin: undefined;
+  Image: BreedType;
 };
 
 export type BottomTabParamList = {
-  TabOne: undefined;
-  TabTwo: undefined;
+  Home: undefined;
+  BreedList: undefined;
+  Random: undefined;
 };
 
-export type TabOneParamList = {
-  TabOneScreen: undefined;
+export type HomeTabParamList = {
+  HomeScreen: undefined;
 };
 
-export type TabTwoParamList = {
-  TabTwoScreen: undefined;
+export type TabBreedListParamList = {
+  TabBreedListScreen: undefined;
 };
+
+export type TabRandomParamList = {
+  RandomScreen: undefined
+};
+
+export type BreedType = {
+  name: string
+  breed: string
+  subBreed?: string
+  imageUri?: string
+}
